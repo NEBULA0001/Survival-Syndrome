@@ -1,6 +1,7 @@
 import pygame
 import random
-from gui import *
+from gui import render_text, render_GUI_Box
+from player import Player
 
 HEIGHT = 800
 WIDTH = 600
@@ -22,6 +23,7 @@ running = True
 dt = 0
 
 player_pos = pygame.Vector2(screen.get_width() / 2, screen.get_height() / 2)
+player = Player(100, player_pos, 10)
 
 font = pygame.font.Font(None, big_font_size)
 small_font = pygame.font.Font(None, small_font_size)
@@ -34,8 +36,9 @@ while running:
     screen.fill(GAME_BG_color)
 
     # RENDER YOUR GAME HERE
-    pygame.draw.circle(screen, GAME_PLAYER_color, player_pos, 30)
-
+    player.drawPlayer(screen)   
+    player.update(dt)
+    
     render_text(screen, "RUST 2D V1.0 BETA", font, (255, 255, 255), (10, 10))
     render_GUI_Box(screen, (250, 80), "Inventory", (150, 100, 0), (0, 520))
 
