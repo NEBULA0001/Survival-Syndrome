@@ -12,3 +12,8 @@ Day 1
 
 Added Player animations and sprite so it feels and looks better
 <img width="793" height="623" alt="image" src="https://github.com/user-attachments/assets/9c638863-adf6-4e8c-8663-44a956146e89" />
+
+DAY 2 
+
+I added a hotbar and started displaying players stats and rendering the map it self with my amazing pixel art
+<img width="1675" height="910" alt="image" src="https://github.com/user-attachments/assets/a2bc8891-aa03-413e-a85f-e44c0c48a5c7" />
