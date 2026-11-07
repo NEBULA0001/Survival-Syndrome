@@ -1,0 +1,5 @@
+python 3.13.16
+pygame 2.6.1
+pyinstaller
+
+run the game via the .exe simply

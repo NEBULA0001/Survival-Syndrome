@@ -1,0 +1,2 @@
+2026 nov 6th - formed the main.py and gui.py for shitty "rust but 2d" in pygame
+inspiration by roblox booga booga and rust hybrid but not as gut retching tho
