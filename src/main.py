@@ -1,6 +1,6 @@
 import pygame
 import random
-from gui import render_text, render_GUI_Box
+from gui import render_text, render_BOXgui
 from player import Player
 
 HEIGHT = 800
@@ -18,6 +18,7 @@ small_font_size = 12
 #actual game code
 pygame.init()
 screen = pygame.display.set_mode((HEIGHT, WIDTH))
+pygame.display.set_caption("Survival Syndrome BETA")
 clock = pygame.time.Clock()
 running = True
 dt = 0
@@ -38,20 +39,10 @@ while running:
     # RENDER YOUR GAME HERE
     player.drawPlayer(screen)   
     player.update(dt)
-    
-    render_text(screen, "RUST 2D V1.0 BETA", font, (255, 255, 255), (10, 10))
-    render_GUI_Box(screen, (250, 80), "Inventory", (150, 100, 0), (0, 520))
 
-    keys = pygame.key.get_pressed()
-    if keys[pygame.K_w]:
-        player_pos.y -= 300 * dt
-    if keys[pygame.K_s]:
-        player_pos.y += 300 * dt
-    if keys[pygame.K_a]:
-        player_pos.x -= 300 * dt
-    if keys[pygame.K_d]:
-        player_pos.x += 300 * dt
-    
+    render_text(screen, "RUST 2D V1.0 BETA", font, (255, 255, 255), (10, 10))
+    render_BOXgui(screen, (200, 80), "Health", (150, 100, 0), (0, 520))
+
     pygame.display.flip()
 
     dt = clock.tick(GAME_FPS) / 1000

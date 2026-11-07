@@ -1,2 +1,6 @@
 2026 nov 6th - formed the main.py and gui.py for shitty "rust but 2d" in pygame
 inspiration by roblox booga booga and rust hybrid but not as gut retching tho
+
+Ive added player movement and animations | will add mining and chopping with a yellow select box around a minable object 
+
+2026 nov 7th - Day 2 I just woke up gonna work on the mining and allat im gonna make a pickaxe sprite "stone pickaxe"
